@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vbox width="100%" height="100%">
+	<style>
+		.removeRuleButton {
+			icon: "images/cross.png";
+			borderSize: 0;
+			backgroundColor: -1;
+			filter: null;
+		}
+	</style>
+	<menubar>
+		<menubutton text="File" id="menuFile">
+			<menu>
+				<menuitem id="menuImport" text="Import..." />
+				<menuitem id="menuExport" text="Export..." />
+			</menu>
+		</menubutton>
+		<menubutton text="Help" id="menuHelp">
+			<menu>
+				<menuitem text="About..." />
+			</menu>
+		</menubutton>
+	</menubar>
+	
+	<hbox width="100%" height="100%" style="padding: 0; spacing: 2">
+		<tabview id="previewTabs" width="100%" height="100%">
+			<import resource="ui/previews/basic.xml" />
+			<import resource="ui/previews/scrolls.xml" />
+		</tabview>
+		
+		<vbox width="330" height="100%">
+			<tabview id="" width="100%" height="100%">
+				<vbox text="Rules" width="100%" height="100%">
+					<hbox width="100%">
+						<listSelector id="availableRules" text="Select rule to add" width="100%" listSize="8" />
+						<button text="Add" id="addRule" visible="false" />
+					</hbox>
+					<listView id="userRules" width="100%" height="50%" itemRenderer="haxe.ui.toolkit.core.renderers.ComponentItemRenderer" />
+					
+					<listView id="cssProps" width="100%" height="50%" itemRenderer="haxe.ui.toolkit.core.renderers.ComponentItemRenderer" allowSelection="false">
+						<!--import resource="ui/css-props-datasource.xml" /-->
+					</listView>
+					
+					<box width="100%" visible="true">
+						<checkbox id="autoUpdate" text="Auto-update (can be slow)" selected="false" verticalAlign="center" />
+						<button id="updateUserRule" text="Update" horizontalAlign="right" />
+					</box>
+				</vbox>
+			</tabview>
+		</vbox>
+	</hbox>
+</vbox>

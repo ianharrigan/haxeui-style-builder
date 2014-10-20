@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<!-- NMML reference: https://gist.github.com/1763850 -->
+	
+	<!-- metadata, make sure 'package' is at least 3 segments (ie. com.mycompany.myproject) -->
+	<meta title="haxeui-style-builder" package="haxe.ui.stylebuilder.haxeuistylebuilder" version="1.0.0" company="..." />
+	
+	<!-- output -->
+	<app main="haxe.ui.stylebuilder.Main" file="haxeuistylebuilder" path="bin" />
+	
+	<window background="#FFFFFF" fps="60" />
+	<window width="800" height="600" unless="mobile" />
+	<window orientation="landscape" vsync="false" antialiasing="0" if="cpp" />
+	
+	<!-- classpath, haxe libs -->
+	<source path="src" />
+	<haxelib name="openfl" />
+	<haxelib name="actuate" />
+	<haxelib name="haxeui" />
+	<haxelib name="haxeui-rich-text" />
+	
+	<!-- assets -->
+	<icon path="assets/application-default-icon.svg" />
+	<assets path="assets" rename="assets" />
+	
+	<assets path="assets/ui" rename="ui" />
+	<assets path="assets/data" rename="data" />
+	<assets path="assets/styles" rename="styles" />
+	<assets path="assets/images" rename="images" />
+	
+	<!-- optimize output
+	<haxeflag name="-dce full" /> -->
+	
+</project>

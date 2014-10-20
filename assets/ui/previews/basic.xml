@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vbox id="previewContainer" styleName="preview" text="Basic Components" horizontalAlign="center" verticalAlign="center">
+	<hbox>
+		<button text="Button" id="tempButton" />	
+		<button text="Toggle" toggle="true" />	
+		<button text="Toggle" toggle="true" selected="true" />	
+		<button text="Disabled" disabled="true" />	
+	</hbox>
+	
+	<hbox>
+		<checkbox text="Checkbox" />
+		<checkbox text="Selected" selected="true" />
+		<checkbox text="Disabled" disabled="true" />
+		<checkbox text="Disabled" selected="true" disabled="true" />
+	</hbox>
+	
+	<hbox>
+		<optionbox text="Optionbox" group="1" />
+		<optionbox text="Selected" selected="true" group="1" />
+		<optionbox text="Disabled" disabled="true" />
+		<optionbox text="Disabled" selected="true" disabled="true" />
+	</hbox>
+	
+	<hbox>
+		<textinput text="Test" placeholderText="Placeholder" />
+		<textinput text="" placeholderText="Placeholder" />
+	</hbox>
+	
+	<hbox>
+		<textinput text="Test" placeholderText="Placeholder" disabled="true" />
+		<textinput text="" placeholderText="Placeholder" disabled="true" />
+	</hbox>
+</vbox>

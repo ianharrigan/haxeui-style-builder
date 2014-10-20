@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project version="2">
+  <!-- Output SWF options -->
+  <output>
+    <movie outputType="Application" />
+    <movie input="" />
+    <movie path="application.xml" />
+    <movie fps="60" />
+    <movie width="1024" />
+    <movie height="768" />
+    <movie version="3" />
+    <movie minorVersion="0" />
+    <movie platform="NME" />
+    <movie background="FFFFFF" />
+    <movie preferredSDK=";3;" />
+  </output>
+  <!-- Other classes to be compiled into your SWF -->
+  <classpaths>
+    <class path="C:\Servers\Haxe\haxe\lib\lime\2,0,0-alpha,2" />
+    <class path="C:\Servers\Haxe\haxe\lib\haxeui-rich-text\0,1,1" />
+    <class path="C:\Servers\Haxe\haxe\lib\actuate\1,7,5" />
+    <class path="C:\Servers\Haxe\haxe\lib\openfl\2,1,2" />
+    <class path="C:\Servers\Haxe\haxe\lib\hscript\2,0,3" />
+    <class path="C:\Servers\Haxe\haxe\lib\haxeui\1,5,8" />
+    <class path="C:\Servers\Haxe\haxe\lib\svg\1,0,8" />
+    <class path="src" />
+    <class path="C:\Servers\Haxe\haxe\lib\haxeui\1,5,8\styles" />
+    <class path="C:\Servers\Haxe\haxe\lib\haxeui\1,5,8\fonts" />
+    <class path="C:\Servers\Haxe\haxe\lib\haxeui-rich-text\0,1,1\assets" />
+    <class path="bin\flash\haxe" />
+  </classpaths>
+  <!-- Build options -->
+  <build>
+    <option directives="lime=2.0.0-alpha.2&#xA;haxeui-rich-text=0.1.1&#xA;actuate=1.7.5&#xA;openfl=2.1.2&#xA;hscript=2.0.3&#xA;haxeui=1.5.8&#xA;svg=1.0.8&#xA;tools=2.0.0-alpha.2&#xA;no-compilation&#xA;openfl-flash&#xA;web" />
+    <option flashStrict="False" />
+    <option noInlineOnDebug="False" />
+    <option mainClass="ApplicationMain" />
+    <option enabledebug="True" />
+    <option additional="-swf-version 11.2" />
+  </build>
+  <!-- haxelib libraries -->
+  <haxelib>
+    <!-- example: <library name="..." /> -->
+  </haxelib>
+  <!-- Class files to compile (other referenced classes will automatically be included) -->
+  <compileTargets>
+    <compile path="src\haxe\ui\stylebuilder\Main.hx" />
+  </compileTargets>
+  <!-- Assets to embed into the output SWF -->
+  <library>
+    <!-- example: <asset path="..." id="..." update="..." glyphs="..." mode="..." place="..." sharepoint="..." /> -->
+  </library>
+  <!-- Paths to exclude from the Project Explorer tree -->
+  <hiddenPaths>
+    <hidden path="obj" />
+  </hiddenPaths>
+  <!-- Executed before build -->
+  <preBuildCommand />
+  <!-- Executed after build -->
+  <postBuildCommand alwaysRun="False" />
+  <!-- Other project options -->
+  <options>
+    <option showHiddenPaths="False" />
+    <option testMovie="Custom" />
+    <option testMovieCommand="" />
+  </options>
+  <!-- Plugin storage -->
+  <storage />
+</project>

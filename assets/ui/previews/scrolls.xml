@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vbox id="previewContainer" styleName="preview" text="Scroll/Slider Components" horizontalAlign="center" verticalAlign="center">
+	<hbox>
+		<vscroll />
+		<vscroll height="200" />
+		<vscroll width="30" height="200" />
+		<vscroll disabled="true" />
+		
+		<vprogress pos="25" />
+		<vprogress height="200" pos="75" />
+		<vprogress width="30" height="200" pos="50" />
+		<vprogress pos="25" disabled="true" />
+
+		<!--
+		<vslider pos="25" />
+		<vslider height="200" pos="75" />
+		<vslider width="30" height="200" pos="50" />
+		<vslider pos="25" disabled="true" />
+		-->
+	</hbox>
+
+	<hscroll />
+	<hscroll width="200" />
+	<hscroll width="200" height="30" />
+	<hscroll disabled="true" />
+	
+	<hprogress pos="25" />
+	<hprogress width="200" pos="75" />
+	<hprogress width="200" height="30" pos="50" />
+	<hprogress pos="25" disabled="true" />
+	
+	<!--
+	<hslider pos="25" />
+	<hslider width="200" pos="75" />
+	<hslider width="200" height="30" pos="50" />
+	<hslider pos="25" disabled="true" />
+	-->
+</vbox>

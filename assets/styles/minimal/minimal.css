@@ -1,0 +1,188 @@
+Button {
+	backgroundColor: 0xFFFFFF;
+	filter: null;
+	cornerRadius: 0;
+	color: 0x000000;
+	fontName: "_sans";
+	borderColor: 0x666666;
+}
+
+Button:over {
+	backgroundColor: 0xEEEEEE;
+}
+
+Button:down {
+	backgroundColor: 0xDDDDDD;
+}
+
+Button:disabled {
+	backgroundColor: 0xCCCCCC;
+	color: 0x888888;
+	borderColor: 0xAAAAAA;
+}
+
+CheckBoxValue {
+	width: 18;
+	height: 18;
+}
+
+CheckBoxValue #selected {
+	icon: "styles/minimal/cross_dark.png";
+	iconPosition: "center";
+}
+
+CheckBoxValue #selected:disabled {
+	icon: "styles/minimal/cross_dark_disabled.png";
+}
+
+OptionBoxValue {
+	width: 18;
+	height: 18;
+}
+
+OptionBoxValue #unselected {
+	cornerRadius: 9;
+}
+
+OptionBoxValue #selected {
+	icon: "styles/minimal/circle_dark.png";
+	iconPosition: "center";
+	cornerRadius: 9;
+}
+
+OptionBoxValue #selected:disabled {
+	icon: "styles/minimal/circle_dark_disabled.png";
+}
+
+TextInput {
+	backgroundColor: 0xFFFFFF;
+	filter: null;
+	cornerRadius: 0;
+	color: 0x000000;
+	fontName: "_sans";
+}
+
+TextInput:disabled {
+	backgroundColor: 0xCCCCCC;
+	color: 0x888888;
+}
+
+VScroll {
+	backgroundColor: 0xCCCCCC;
+}
+
+VScroll Button.up {
+	icon: "styles/minimal/arrow_up.png";
+}
+
+VScroll Button.down {
+	icon: "styles/minimal/arrow_down.png";
+}
+
+VScroll Button.thumb {
+	icon: "styles/minimal/gripper_vertical.png";
+}
+
+VScroll Button.thumb:disabled {
+	icon: "styles/minimal/gripper_vertical_disabled.png";
+}
+
+VScroll Button.up:disabled {
+	icon: "styles/minimal/arrow_up_disabled.png";
+}
+
+VScroll Button.down:disabled {
+	icon: "styles/minimal/arrow_down_disabled.png";
+}
+
+HScroll {
+	backgroundColor: 0xCCCCCC;
+}
+
+HScroll Button.left {
+	icon: "styles/minimal/arrow_left.png";
+}
+
+HScroll Button.right {
+	icon: "styles/minimal/arrow_right.png";
+}
+
+HScroll Button.thumb {
+	icon: "styles/minimal/gripper_horizontal.png";
+}
+
+HScroll Button.thumb:disabled {
+	icon: "styles/minimal/gripper_horizontal_disabled.png";
+}
+
+HScroll Button.left:disabled {
+	icon: "styles/minimal/arrow_left_disabled.png";
+}
+
+HScroll Button.right:disabled {
+	icon: "styles/minimal/arrow_right_disabled.png";
+}
+
+VProgress {
+	width: 20;
+	height: 100;
+	filter: null;
+	cornerRadius: 0;
+	borderColor: 0x666666;
+}
+
+VProgress:disabled {
+	filter: null;
+	cornerRadius: 0;
+	borderColor: 0xAAAAAA;
+}
+
+VProgress #background {
+	borderSize: 0;
+	backgroundColor: 0xCCCCCC;
+	filter: null;
+	cornerRadius: 0;
+}
+
+VProgress #value {
+	borderSize: 2;
+	borderColor: 0xCCCCCC;
+	cornerRadius: 0;
+	backgroundColor: 0xFFFFFF;
+}
+
+VProgress #value:disabled {
+	backgroundColor: 0xBBBBBB;
+}
+
+HProgress {
+	width: 100;
+	height: 20;
+	filter: null;
+	cornerRadius: 0;
+	borderColor: 0x666666;
+}
+
+HProgress:disabled {
+	filter: null;
+	cornerRadius: 0;
+	borderColor: 0xAAAAAA;
+}
+
+HProgress #background {
+	borderSize: 0;
+	backgroundColor: 0xCCCCCC;
+	filter: null;
+	cornerRadius: 0;
+}
+
+HProgress #value {
+	borderSize: 2;
+	borderColor: 0xCCCCCC;
+	cornerRadius: 0;
+	backgroundColor: 0xFFFFFF;
+}
+
+HProgress #value:disabled {
+	backgroundColor: 0xBBBBBB;
+}

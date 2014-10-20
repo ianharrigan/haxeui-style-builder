@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rules>
+	<properties>
+		<group id="backgrounds">backgroundImage,backgroundImageScale9,backgroundImageRect,backgroundColor,backgroundColorGradientEnd</group>
+		<group id="borders">borderColor,borderSize</group>
+		<group id="text">color,fontName,fontSize,fontScale,fontEmbedded,fontBold,fontItalic,fontUnderline,textAlign</group>
+		<group id="containers">paddingLeft,paddingRight,paddingTop,paddingBottom,padding,spacingX,spacingY,spacing</group>
+		<group id="corners">cornerRadiusTopLeft,cornerRadiusTopRight,cornerRadiusBottomLeft,cornerRadiusBottomRight,cornerRadius</group>
+		<group id="alignment">verticalAlignment,horizontalAlignment</group>
+		<group id="filters">alpha,filter</group>
+		<group id="icons">iconPosition,icon</group>
+	</properties>
+	
+	<!--  BUTTONS -->
+	<rule>
+		<name>Button</name>
+		<selector>Button</selector>
+		<properties groups="backgrounds,borders,text,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>Button (Over)</name>
+		<selector>Button:over</selector>
+		<properties groups="backgrounds,borders,text,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>Button (Down)</name>
+		<selector>Button:down</selector>
+		<properties groups="backgrounds,borders,text,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>Button (Disabled)</name>
+		<selector>Button:disabled</selector>
+		<properties groups="backgrounds,borders,text,containers,corners,filters,icons" />
+	</rule>
+	
+	<!-- CHECKBOXES -->
+	<rule>
+		<name>Check Box Container</name>
+		<selector>CheckBox</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters" />
+	</rule>
+
+	<rule>
+		<name>Check Box Value</name>
+		<selector>CheckBoxValue</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+
+	<rule>
+		<name>Check Box Unselected Value</name>
+		<selector>CheckBoxValue #unselected</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>Check Box Unselected Value (Disabled)</name>
+		<selector>CheckBoxValue #unselected:disabled</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>Check Box Selected Value</name>
+		<selector>CheckBoxValue #selected</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>Check Box Selected Value (Disabled)</name>
+		<selector>CheckBoxValue #selected:disabled</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<!-- OPTIONBOXES -->
+	<rule>
+		<name>Option Box Container</name>
+		<selector>OptionBox</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters" />
+	</rule>
+
+	<rule>
+		<name>Option Box Value</name>
+		<selector>OptionBoxValue</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+
+	<rule>
+		<name>Option Box Unselected Value</name>
+		<selector>OptionBoxValue #unselected</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>Option Box Unselected Value (Disabled)</name>
+		<selector>OptionBoxValue #unselected:disabled</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>Option Box Selected Value</name>
+		<selector>OptionBoxValue #selected</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>Option Box Selected Value (Disabled)</name>
+		<selector>OptionBoxValue #selected:disabled</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<!-- TEXTINPUTS -->
+	<rule>
+		<name>Text Input</name>
+		<selector>TextInput</selector>
+		<properties groups="backgrounds,borders,text,containers,corners,filters" />
+	</rule>
+	
+	<rule>
+		<name>Text Input (Disabled)</name>
+		<selector>TextInput:disabled</selector>
+		<properties groups="backgrounds,borders,text,containers,corners,filters" />
+	</rule>
+	
+	<rule>
+		<name>Text Input Placeholder</name>
+		<selector>TextInput #placeholder</selector>
+		<properties groups="text,containers" />
+	</rule>
+	
+	<!-- VSCROLLS -->
+	<rule>
+		<name>VScroll Container</name>
+		<selector>VScroll</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters" />
+	</rule>
+	
+	<rule>
+		<name>VScroll Buttons</name>
+		<selector>VScroll Button</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>VScroll Buttons (Over)</name>
+		<selector>VScroll Button:over</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>VScroll Buttons (Down)</name>
+		<selector>VScroll Button:down</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>VScroll Buttons (Disabled)</name>
+		<selector>VScroll Button:disabled</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>VScroll Up Button</name>
+		<selector>VScroll Button.up</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>VScroll Up Button (Disabled)</name>
+		<selector>VScroll Button.up:disabled</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>VScroll Down Button</name>
+		<selector>VScroll Button.down</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>VScroll Down Button (Disabled)</name>
+		<selector>VScroll Button.down:disabled</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>VScroll Thumb Button</name>
+		<selector>VScroll Button.thumb</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>VScroll Thumb Button (Disabled)</name>
+		<selector>VScroll Button.thumb:disabled</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<!-- HSCROLLS -->
+	<rule>
+		<name>HScroll Container</name>
+		<selector>HScroll</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters" />
+	</rule>
+	
+	<rule>
+		<name>HScroll Buttons</name>
+		<selector>HScroll Button</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>HScroll Buttons (Over)</name>
+		<selector>HScroll Button:over</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>HScroll Buttons (Down)</name>
+		<selector>HScroll Button:down</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>HScroll Buttons (Disabled)</name>
+		<selector>HScroll Button:disabled</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>HScroll Left Button</name>
+		<selector>HScroll Button.left</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>HScroll Left Button (Disabled)</name>
+		<selector>HScroll Button.left:disabled</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>HScroll Right Button</name>
+		<selector>HScroll Button.right</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>HScroll Right Button (Disabled)</name>
+		<selector>HScroll Button.right:disabled</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>HScroll Thumb Button</name>
+		<selector>HScroll Button.thumb</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<rule>
+		<name>HScroll Thumb Button (Disabled)</name>
+		<selector>HScroll Button.thumb:disabled</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters,icons" />
+	</rule>
+	
+	<!-- VPROGRESS -->
+	<rule>
+		<name>VProgress Container</name>
+		<selector>VProgress</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters" />
+	</rule>
+	
+	<rule>
+		<name>VProgress Container (Disabled)</name>
+		<selector>VProgress:disabled</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters" />
+	</rule>
+	
+	<rule>
+		<name>VProgress Background</name>
+		<selector>VProgress #background</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters" />
+	</rule>
+	
+	<rule>
+		<name>VProgress Background (Disabled)</name>
+		<selector>VProgress #background:disabled</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters" />
+	</rule>
+	
+	<rule>
+		<name>VProgress Value</name>
+		<selector>VProgress #value</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters" />
+	</rule>
+	
+	<rule>
+		<name>VProgress Value (Disabled)</name>
+		<selector>VProgress #value:disabled</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters" />
+	</rule>
+	
+	<!-- HPROGRESS -->
+	<rule>
+		<name>HProgress Container</name>
+		<selector>HProgress</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters" />
+	</rule>
+	
+	<rule>
+		<name>HProgress Container (Disabled)</name>
+		<selector>HProgress:disabled</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters" />
+	</rule>
+	
+	<rule>
+		<name>HProgress Background</name>
+		<selector>HProgress #background</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters" />
+	</rule>
+	
+	<rule>
+		<name>HProgress Background (Disabled)</name>
+		<selector>HProgress #background:disabled</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters" />
+	</rule>
+	
+	<rule>
+		<name>HProgress Value</name>
+		<selector>HProgress #value</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters" />
+	</rule>
+	
+	<rule>
+		<name>HProgress Value (Disabled)</name>
+		<selector>HProgress #value:disabled</selector>
+		<properties groups="backgrounds,borders,containers,corners,filters" />
+	</rule>
+</rules>

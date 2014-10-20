@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<json>
+	[
+		{"text": "backgroundColor", "componentType": "textinput", "componentValue": "", "componentSize": 100},
+		{"text": "backgroundColorGradientEnd", "componentType": "textinput", "componentValue": "", "componentSize": 100},
+		{"text": "borderColor", "componentType": "textinput", "componentValue": "", "componentSize": 100},
+		{"text": "borderSize", "componentType": "textinput", "componentValue": "", "componentSize": 100},
+		{"text": "color", "componentType": "textinput", "componentValue": "", "componentSize": 100},
+		{"text": "cornerRadius", "componentType": "textinput", "componentValue": "", "componentSize": 100}
+	]
+</json>
